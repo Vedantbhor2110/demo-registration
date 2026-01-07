@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Create Account – Demo</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="page">
+    <div class="logo">Demo<span>.in</span></div>
+
+    <div class="card">
+        <h1>Create account</h1>
+
+        <label>Your name</label>
+        <input id="name" type="text" placeholder="First and last name">
+
+        <label>Email</label>
+        <input id="email" type="email">
+
+        <label>Password</label>
+        <input id="password" type="password" placeholder="At least 6 characters">
+        <p class="hint">Passwords must be at least 6 characters.</p>
+
+        <label>Password again</label>
+        <input type="password">
+
+        <!-- IMPORTANT -->
+        <button onclick="saveToWord()">Create your demo account</button>
+
+        <p class="terms">
+            By creating an account, you agree to Demo’s
+            <a href="#">Conditions of Use</a> and
+            <a href="#">Privacy Policy</a>.
+        </p>
+
+        <hr>
+
+        <p class="signin">
+            Already have an account?
+            <a href="#">Sign in</a>
+        </p>
+    </div>
+</div>
+
+<!-- IMPORTANT -->
+<script src="https://unpkg.com/docx@8.0.3/build/index.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

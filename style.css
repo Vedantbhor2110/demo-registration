@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #fff;
+}
+
+.page {
+    width: 350px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.logo span {
+    font-size: 14px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    padding: 20px 26px;
+    text-align: left;
+    border-radius: 4px;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    font-size: 13px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin: 6px 0 12px;
+    border: 1px solid #a6a6a6;
+    border-radius: 3px;
+}
+
+.hint {
+    font-size: 12px;
+    margin-top: -8px;
+    color: #555;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #f0c14b;
+    border: 1px solid #a88734;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #e2b33b;
+}
+
+.terms {
+    font-size: 12px;
+    margin-top: 15px;
+}
+
+.terms a {
+    color: #0066c0;
+    text-decoration: none;
+}
+
+hr {
+    margin: 20px 0;
+}
+
+.signin {
+    font-size: 13px;
+}
+
+.signin a {
+    color: #0066c0;
+    text-decoration: none;
+}

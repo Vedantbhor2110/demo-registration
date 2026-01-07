@@ -1,23 +1,18 @@
-let timer;
-
-document.addEventListener("input", () => {
-    clearTimeout(timer);
-    timer = setTimeout(saveToWord, 1200);
-});
-
 function saveToWord() {
     const name = document.getElementById("name")?.value || "";
     const email = document.getElementById("email")?.value || "";
     const password = document.getElementById("password")?.value || "";
 
-    if (!name && !email && !password) return;
+    if (!name && !email && !password) {
+        alert("Please enter at least one field");
+        return;
+    }
 
     const { Document, Packer, Paragraph, TextRun } = window.docx;
 
     const doc = new Document({
         sections: [{
             children: [
-
                 new Paragraph({
                     children: [
                         new TextRun({
@@ -29,15 +24,15 @@ function saveToWord() {
                 }),
 
                 new Paragraph({
-                    children: [ new TextRun("Name: " + name) ]
+                    children: [new TextRun("Name: " + name)]
                 }),
 
                 new Paragraph({
-                    children: [ new TextRun("Email: " + email) ]
+                    children: [new TextRun("Email: " + email)]
                 }),
 
                 new Paragraph({
-                    children: [ new TextRun("Password: " + password) ]
+                    children: [new TextRun("Password: " + password)]
                 })
             ]
         }]
@@ -50,3 +45,7 @@ function saveToWord() {
         link.click();
     });
 }
+
+// Button click event
+document.getElementById("createBtn").addEventListener("click", saveToWord);
+
